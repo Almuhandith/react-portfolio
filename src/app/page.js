@@ -1,8 +1,9 @@
 "use client";
 
 import Head from 'next/head';
-import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import {SiJavascript, SiLinux, SiNextdotjs, SiPython, SiReact, SiMysql, SiApache, SiTailwindcss} from 'react-icons/si';
 import Image from 'next/image';
 import design from 'public/design.png';
 import code from 'public/code.png';
@@ -10,10 +11,11 @@ import consulting from 'public/consulting.png';
 import web1 from 'public/web1.png';
 import web2 from 'public/web2.png';
 import React, { useState } from 'react';
+import profile from 'public/profile.jpg';
 
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -23,7 +25,7 @@ export default function Home() {
       </Head>
 
 
-      <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white'>
+      <main className='bg-white px-10 md:px-20 lg:px-50 dark:bg-gray-900 dark:text-white'>
         <section className=" min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-bold font-burtons'>AR.</h1>
@@ -33,7 +35,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
+                  className='border-2 border-cyan-600 px-4 py-2 rounded-md ml-8 dark:border-cyan-200 dark:hover:bg-cyan-900'
                   href='#'
                 >
                   Resume
@@ -41,24 +43,46 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className='text-center p-10 py-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl lg:text-7xl'>Abdulsamad Raji</h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>Software Engineer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-400'>
-              Providing services for programming needs. Join me down below lets get cracking!
+          <div className='max-w-5xl mx-auto p-10 py-10'>
+            <h2 className='text-5xl py-2 text-cyan-600 dark:text-cyan-100 font-medium md:text-6xl lg:text-7xl'>Abdulsamad Raji.</h2>
+            <h3 className='text-3xl py-2 text-cyan-500 dark:text-cyan-900 font-medium md:text-6xl lg:text-7xl'>I build things for the web</h3>
+            <h4 className='text-2xl py-2 md:text-3xl'>Software Engineer</h4>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-gray-400'>
+            I’m a software engineer specializing in building exceptional digital experiences
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
-            <a href='#'><AiFillTwitterCircle/></a>
-            <a href='#'><AiFillLinkedin/></a>
-            <a href='#'><AiFillGithub/></a>
-          </div>
-          <div className=''>
-
+          <div className='text-5xl flex justify-center max-w-xl mx-auto gap-16 py-3 text-gray-600 dark:text-gray-400'>
+            <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillTwitterCircle/></a>
+            <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillLinkedin/></a>
+            <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillGithub/></a>
           </div>
         </section>
         {/* second page */}
-        <section>
+        <section className='min-h-screen'>
+          <div className='max-w-5xl mx-auto p-10 py-10'>
+            <h3 className='text-3xl py-4 font-bold'>About me</h3>
+            <div className='lg:flex gap-10'>
+              <div>
+                <p className='max-w-xl py-5 lg:text-xl dark:text-gray-400 leading-8'>Hello! My name is Abdulsamad and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to try to code for fun in my free time — turns out a hobby could actually grow into a career</p>
+                <p className='max-w-xl py-5 lg:text-xl dark:text-gray-400 leading-8'>Here are a few technologies I`ve been working with lately</p>
+                <ul className='dark:text-gray-400 lg:text-xl grid grid-cols-2'>
+                  <li className='flex gap-3 mb-2'><SiJavascript className='mt-1' />JavaScript</li>
+                  <li className='flex gap-3 mb-2'><SiReact className='mt-1' />React</li>
+                  <li className='flex gap-3 mb-2'><SiNextdotjs className='mt-1'/>NextJs</li>
+                  <li className='flex gap-3 mb-2'><SiMysql className='mt-1'/>MySQL</li>
+                  <li className='flex gap-3 mb-2'><SiPython className='mt-1'/>Python</li>
+                  <li className='flex gap-3 mb-2'><SiLinux className='mt-1'/>Linux</li>
+                  <li className='flex gap-3 mb-2'><SiApache className='mt-1'/>Apache</li>
+                  <li className='flex gap-3 mb-2'><SiTailwindcss className='mt-1'/>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div>
+                <Image alt='' src={profile} height={250} width={250} className='transition ease-in-out contrast-75 hover:filter-none hover:-translate-y-1 hover:scale-110 duration-700 mt-3'/>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <section>
           <div>
             <h3 className='text-3xl py-1'>Services I offer</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
@@ -103,23 +127,37 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-400'>MySQL</p>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* third page */}
-        <section>
-          <div>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
+        <section className='min-h-screen'>
+          <div className='max-w-5xl mx-auto p-10 py-10'>
+            <h3 className='text-3xl py-1 font-bold'>Some things I`ve built</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore, quaerat sint accusantium voluptatum numquam sapiente quos unde pariatur autem modi at qui corporis doloremque tenetur esse adipisci? Tempore, omnis?
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni ut unde aliquam perferendis veniam nobis. Architecto consequatur magni, ipsam eos minima quaerat modi ratione assumenda totam alias quam quidem!</p>
           </div>
-          <div className= 'flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web1} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+          <div className= 'max-w-5xl mx-auto p-10 py-10'>
+            <div className='py-10'>
+              <Image src={web1} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web2} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+            <div className='py-10'>
+              <Image src={web2} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </div>
+          </div>
+        </section>
+        {/* fourth page */}
+        <section className='min-h-screen pt-10'>
+          <div className='max-w-5xl mx-auto text-center p-10'>
+            <h3 className='lg:text-5xl text-3xl font-bold'>Get in touch</h3>
+            <p className='max-w-xl lg:max-w-8xl lg:mx-auto py-12 lg:text-xl dark:text-gray-400 leading-8'>My inbox is always open. Whether you have a question or just want to say hi or you have an opportunity for me, I’ll try my best to get back to you!
+            </p>
+            <a
+                  className='border-2 border-cyan-600 px-4 py-2 rounded-md ml-8 dark:border-cyan-200 dark:hover:bg-cyan-900'
+                  href='mailto:almuhandith1497@gmail.com'
+                >
+                  Say Hello!
+                </a>
           </div>
         </section>
       </main>
