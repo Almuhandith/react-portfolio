@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import {SiJavascript, SiLinux, SiNextdotjs, SiPython, SiReact, SiMysql, SiApache, SiTailwindcss} from 'react-icons/si';
+import {SiJavascript, SiLinux, SiNextdotjs, SiPython, SiReact, SiMysql, SiTailwindcss, SiBootstrap} from 'react-icons/si';
 import Image from 'next/image';
 // import design from 'public/design.png';
 // import code from 'public/code.png';
@@ -37,7 +37,7 @@ export default function Home() {
               <li>
                 <a
                   className='border-2 border-cyan-600 px-4 py-2 rounded-md ml-8 dark:border-cyan-200 dark:hover:bg-cyan-900'
-                  href='#'
+                  href='https://drive.google.com/file/d/1IT4Ykioxov_TulVpVTW0QX47PX1Cd6q5/view' target="_blank" rel='noreferrer'
                 >
                   Resume
                 </a>
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className='text-5xl flex justify-center max-w-xl mx-auto gap-16 py-3 text-gray-600 dark:text-gray-400'>
             <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillTwitterCircle/></a>
-            <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillLinkedin/></a>
+            <a href='https://www.linkedin.com/in/abdulsamad-raji' target="_blank" rel='noreferrer' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillLinkedin/></a>
             <a href='https://www.github.com/Almuhandith' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillGithub/></a>
           </div>
         </section>
@@ -73,7 +73,7 @@ export default function Home() {
                   <li className='flex gap-3 mb-2'><SiMysql className='mt-1'/>MySQL</li>
                   <li className='flex gap-3 mb-2'><SiPython className='mt-1'/>Python</li>
                   <li className='flex gap-3 mb-2'><SiLinux className='mt-1'/>Linux</li>
-                  <li className='flex gap-3 mb-2'><SiApache className='mt-1'/>Apache</li>
+                  <li className='flex gap-3 mb-2'><SiBootstrap className='mt-1'/>Bootstrap CSS</li>
                   <li className='flex gap-3 mb-2'><SiTailwindcss className='mt-1'/>Tailwind CSS</li>
                 </ul>
               </div>
