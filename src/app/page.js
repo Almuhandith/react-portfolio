@@ -5,9 +5,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import {SiJavascript, SiLinux, SiNextdotjs, SiPython, SiReact, SiMysql, SiApache, SiTailwindcss} from 'react-icons/si';
 import Image from 'next/image';
-import design from 'public/design.png';
-import code from 'public/code.png';
-import consulting from 'public/consulting.png';
+// import design from 'public/design.png';
+// import code from 'public/code.png';
+// import consulting from 'public/consulting.png';
 import web1 from 'public/web1.png';
 import web2 from 'public/web2.png';
 import React, { useState } from 'react';
@@ -15,6 +15,7 @@ import profile from 'public/profile.jpg';
 
 
 export default function Home() {
+  //Darkmode hook
   const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -46,15 +47,15 @@ export default function Home() {
           <div className='max-w-5xl mx-auto p-10 py-10'>
             <h2 className='text-5xl py-2 text-cyan-600 dark:text-cyan-100 font-medium md:text-6xl lg:text-7xl'>Abdulsamad Raji.</h2>
             <h3 className='text-3xl py-2 text-cyan-500 dark:text-cyan-900 font-medium md:text-6xl lg:text-7xl'>I build things for the web</h3>
-            <h4 className='text-2xl py-2 md:text-3xl'>Software Engineer</h4>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-gray-400'>
+            <h4 className='text-2xl pt-10 md:text-3xl'>Software Engineer</h4>
+            <p className='text-md py-3 leading-8 text-gray-800 md:text-xl max-w-xl dark:text-gray-400'>
             I’m a software engineer specializing in building exceptional digital experiences
             </p>
           </div>
           <div className='text-5xl flex justify-center max-w-xl mx-auto gap-16 py-3 text-gray-600 dark:text-gray-400'>
             <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillTwitterCircle/></a>
             <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillLinkedin/></a>
-            <a href='#' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillGithub/></a>
+            <a href='https://www.github.com/Almuhandith' className='hover:text-cyan-600 dark:hover:text-cyan-200'><AiFillGithub/></a>
           </div>
         </section>
         {/* second page */}
@@ -132,15 +133,21 @@ export default function Home() {
         <section className='min-h-screen'>
           <div className='max-w-5xl mx-auto p-10 py-10'>
             <h3 className='text-3xl py-1 font-bold'>Some things I`ve built</h3>
+            <h4 className='text-xl font-semibold mt-8'>1. Weather App</h4>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore, quaerat sint accusantium voluptatum numquam sapiente quos unde pariatur autem modi at qui corporis doloremque tenetur esse adipisci? Tempore, omnis?
+              This is a web app that displays the weather of cities around the world. The forecast of days in a week and other details can also be displayed.
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni ut unde aliquam perferendis veniam nobis. Architecto consequatur magni, ipsam eos minima quaerat modi ratione assumenda totam alias quam quidem!</p>
-          </div>
-          <div className= 'max-w-5xl mx-auto p-10 py-10'>
+            <p>It was developed with ReactJs and css. Openweather Api and GeoDB cities is integrated into the app</p>
             <div className='py-10'>
               <Image src={web1} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </div>
+          </div>
+          <div className='max-w-5xl mx-auto p-10 py-10'>
+            <h4 className='text-xl font-semibold mt-8'>2. Talent Hauz</h4>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
+              This is a web app where talents are tested and recommended to interested recruiters for job availability.
+            </p>
+            <p>The frontend was developed with ReactJs and Bootstrap Css.</p>
             <div className='py-10'>
               <Image src={web2} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} />
             </div>
