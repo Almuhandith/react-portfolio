@@ -3,6 +3,7 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import {BiCodeAlt} from 'react-icons/bi'
 import {SiJavascript, SiLinux, SiNextdotjs, SiPython, SiReact, SiMysql, SiTailwindcss, SiBootstrap} from 'react-icons/si';
 import Image from 'next/image';
 // import design from 'public/design.png';
@@ -29,7 +30,9 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-50 dark:bg-gray-900 dark:text-white'>
         <section className=" min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-bold font-burtons border-double border-2 dark:border-cyan-200 border-cyan-600 p-1'>AR</h1>
+            <h1 className='text-xl font-bold font-burtons text-cyan-600 dark:text-cyan-200'>
+              <BiCodeAlt />
+            </h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
