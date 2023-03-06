@@ -22,14 +22,14 @@ export default function Home() {
       <Head>
         <title>Abdulsamad Raji Portfolio</title>
         <meta name='description' content='' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.png' />
       </Head>
 
 
       <main className='bg-white px-10 md:px-20 lg:px-50 dark:bg-gray-900 dark:text-white'>
         <section className=" min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-bold font-burtons'>AR.</h1>
+            <h1 className='text-xl font-bold font-burtons border-double border-2 dark:border-cyan-200 border-cyan-600 p-1'>AR</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
@@ -139,7 +139,9 @@ export default function Home() {
             </p>
             <p>It was developed with ReactJs and css. Openweather Api and GeoDB cities is integrated into the app</p>
             <div className='py-10'>
-              <Image src={web1} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} />
+              <a href='https://react-weather-app-sable.vercel.app/' className='cursor-pointer'>
+                <Image src={web1} alt='' className='rounded-lg object-cover' width={'100%'} height={'100%'} />
+              </a>
             </div>
           </div>
           <div className='max-w-5xl mx-auto p-10 py-10'>
