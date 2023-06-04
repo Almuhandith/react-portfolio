@@ -25,6 +25,10 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Malgun+Gothic&display=swap"
           rel="stylesheet"
         />
+        <Link
+          href="https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Component {...pageProps} />
     </>

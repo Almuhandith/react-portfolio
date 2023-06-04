@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         'comic-sans': ['Comic Sans MS', 'cursive'],
         'malgun-gothic': ['Malgun Gothic', 'sans-serif'],
+        'trebuchet-ms': ['Trebuchet MS', 'sans-serif'],
       },
       colors: {
         dark: '#1f2937',

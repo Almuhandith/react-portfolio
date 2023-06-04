@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
 
 
-      <main className={`font-malgun-gothic bg-white px-3 md:px-20 lg:px-50 dark:bg-primary dark:text-white`}>
+      <main className={`font-trebuchet-ms bg-white px-3 md:px-20 lg:px-50 dark:bg-primary dark:text-white`}>
         <Navbar />
         <section className="min-h-screen pt-16 lg:pt-24">
           <div className='max-w-5xl mx-auto p-10 py-10'>
