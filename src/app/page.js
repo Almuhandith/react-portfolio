@@ -1,9 +1,7 @@
 "use client";
 
 import Head from 'next/head';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import {BiCodeAlt} from 'react-icons/bi'
 import {SiJavascript, SiLinux, SiNextdotjs, SiPython, SiReact, SiMysql, SiTailwindcss, SiBootstrap} from 'react-icons/si';
 import {FiGithub, FiExternalLink} from 'react-icons/fi';
 import Image from 'next/image';
@@ -15,6 +13,7 @@ import web2 from 'public/web2.png';
 import React, { useState } from 'react';
 import profile from 'public/profile.jpg';
 import Cursor from './Cursor';
+import Navbar from '../components/Navbar';
 
 
 export default function Home() {
@@ -29,26 +28,9 @@ export default function Home() {
       </Head>
 
 
-      <main className='bg-white px-10 md:px-20 lg:px-50 dark:bg-indigo-900 dark:text-white'>
-        <section className=" min-h-screen">
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-bold font-burtons text-indigo-600 dark:text-indigo-200'>
-              <BiCodeAlt />
-            </h1>
-            <ul className='flex items-center'>
-              <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
-              </li>
-              <li>
-                <a
-                  className='border-2 border-indigo-600 px-4 py-2 rounded-md ml-8 dark:border-indigo-200 dark:hover:bg-indigo-900'
-                  href='https://drive.google.com/file/d/1IT4Ykioxov_TulVpVTW0QX47PX1Cd6q5/view' target="_blank" rel='noreferrer'
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
+      <main className='bg-white px-3 md:px-20 lg:px-50 dark:bg-indigo-900 dark:text-white'>
+        <Navbar />
+        <section className=" min-h-screen pt-16 lg:pt-24">
           <div className='max-w-5xl mx-auto p-10 py-10'>
             <h2 className='text-5xl py-2 text-indigo-600 dark:text-indigo-100 font-medium md:text-6xl lg:text-7xl'>Abdulsamad Raji.</h2>
             <h3 className='text-3xl py-2 text-indigo-800 dark:text-indigo-200 font-medium md:text-6xl lg:text-7xl'>I build things for the web</h3>
@@ -64,7 +46,7 @@ export default function Home() {
           </div>
         </section>
         {/* second page */}
-        <section className='min-h-screen'>
+        <section id='about' className='min-h-screen'>
           <div className='max-w-5xl mx-auto p-10 py-10'>
             <h3 className='text-3xl py-4 font-bold'>About me</h3>
             <div className='lg:flex gap-10'>
@@ -88,8 +70,66 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* <section>
-          <div>
+        {/* third page */}
+        <section id='projects' className='min-h-screen'>
+          <div className='max-w-5xl mx-auto p-10 py-10'>
+            <h3 className='text-3xl py-1 font-bold'>Some things I`ve built</h3>
+            <div className='lg:flex lg:relative my-14 pb-16'>
+              <div className='lg:w-3/5'>
+                <a href='https://react-weather-app-sable.vercel.app/' className='cursor-pointer'>
+                  <Image src={web1} alt='' className='' />
+                </a>
+              </div>
+              <div className='lg:absolute lg:z-10 lg:right-0 lg:w-1/2 lg:text-right'>
+                <h4 className='text-xl font-semibold mb-4'>Weather App</h4>
+                <p className='text-md py-2 px-4 leading-8 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
+                  This is a web app that displays the weather of cities around the world. The forecast of days in a week and other details can also be displayed.
+                </p>
+                <p className='lg:bg-indigo-800 px-4 lg:pb-4'>It was developed with ReactJs and css. Openweather Api and GeoDB cities is integrated into the app.
+                </p>
+                <div className='flex gap-1 lg:gap-4 lg:flex-row-reverse text-xs lg:mt-4'>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>ReactJs</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>Tailwindcss</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>OpenweatherAPI</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>GeoDBAPI</p>
+                </div>
+                <div className='flex gap-3 flex-row-reverse mt-4'>
+                  <a href='https://github.com/Almuhandith/react-weather-app' className='hover:text-indigo-200'><FiGithub/></a>
+                  <a href='https://react-weather-app-sable.vercel.app/' className='hover:text-indigo-200'><FiExternalLink /></a>
+                  
+                </div>
+              </div>
+            </div>
+            <div className='lg:flex lg:relative my-14'>
+              <div className='lg:w-3/5'>
+                <a href='https://react-weather-app-sable.vercel.app/' className='cursor-pointer'>
+                  <Image src={web2} alt='' className='' />
+                </a>
+              </div>
+              <div className='lg:absolute lg:z-10 lg:right-0 lg:w-1/2 lg:text-right'>
+                <h4 className='text-xl font-semibold mb-4'>IP Address Tracker</h4>
+                <p className='text-md py-2 px-4 leading-8 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
+                  This is a web app that displays the location of IP addresses and domains
+                </p>
+                <p className='lg:bg-indigo-800 px-4 lg:pb-4'>It was developed with ReactJs and Tailwindcss. Geolocation Api and React leaflet is integrated into the app.
+                </p>
+                <div className='flex gap-0 lg:gap-4 lg:flex-row-reverse text-xs lg:mt-4'>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>ReactJs</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>Tailwindcss</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>GeolocationAPI</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>Reactleaflet</p>
+                </div>
+                <div className='flex gap-3 flex-row-reverse mt-4'>
+                  <a href='https://github.com/Almuhandith/ip-address-tracker' className='hover:text-indigo-200'><FiGithub/></a>
+                  <a href='https://ip-address-tracker-abdulsamad.vercel.app/' className='hover:text-indigo-200'><FiExternalLink /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* fourth page */}
+        {/* <section className='min-h-screen max-w-5xl mx-auto'>
+          <div className=''>
             <h3 className='text-3xl py-1'>Services I offer</h3>
             <p className='text-md py-2 leading-8 text-indigo-800 dark:text-indigo-200'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore, quaerat sint accusantium voluptatum numquam sapiente quos unde pariatur autem modi at qui corporis doloremque tenetur esse adipisci? Tempore, omnis?
@@ -134,66 +174,9 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        {/* third page */}
-        <section className='min-h-screen'>
-          <div className='max-w-5xl mx-auto p-10 py-10'>
-            <h3 className='text-3xl py-1 font-bold'>Some things I`ve built</h3>
-            <div className='flex relative my-14'>
-              <div className='w-3/5'>
-                <a href='https://react-weather-app-sable.vercel.app/' className='cursor-pointer'>
-                  <Image src={web1} alt='' className='h-auto' />
-                </a>
-              </div>
-              <div className='absolute z-10 right-0 w-1/2 text-right'>
-                <h4 className='text-xl font-semibold mb-4'>Weather App</h4>
-                <p className='text-md py-2 px-4 leading-8 bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
-                  This is a web app that displays the weather of cities around the world. The forecast of days in a week and other details can also be displayed.
-                </p>
-                <p className='bg-indigo-800 px-4 pb-4'>It was developed with ReactJs and css. Openweather Api and GeoDB cities is integrated into the app.
-                </p>
-                <div className='flex gap-4 flex-row-reverse mx-auto text-xs mt-4'>
-                  <p className='bg-indigo-800 p-2 rounded-full'>ReactJs</p>
-                  <p className='bg-indigo-800 p-2 rounded-full'>Tailwindcss</p>
-                  <p className='bg-indigo-800 p-2 rounded-full'>OpenweatherAPI</p>
-                  <p className='bg-indigo-800 p-2 rounded-full'>GeoDBAPI</p>
-                </div>
-                <div className='flex gap-3 flex-row-reverse mt-4'>
-                  <a href='https://github.com/Almuhandith/react-weather-app' className='hover:text-indigo-200'><FiGithub/></a>
-                  <a href='https://react-weather-app-sable.vercel.app/' className='hover:text-indigo-200'><FiExternalLink /></a>
-                  
-                </div>
-              </div>
-            </div>
-            <div className='flex relative my-14'>
-              <div className='w-3/5'>
-                <a href='https://react-weather-app-sable.vercel.app/' className='cursor-pointer'>
-                  <Image src={web2} alt='' className='h-auto' />
-                </a>
-              </div>
-              <div className='absolute z-10 right-0 w-1/2 text-right'>
-                <h4 className='text-xl font-semibold mb-4'>IP Address Tracker</h4>
-                <p className='text-md py-2 px-4 leading-8 bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
-                  This is a web app that displays the location of IP addresses and domains
-                </p>
-                <p className='bg-indigo-800 px-4 pb-4'>It was developed with ReactJs and Tailwindcss. Geolocation Api and React leaflet is integrated into the app.
-                </p>
-                <div className='flex gap-4 flex-row-reverse mx-auto text-xs mt-4'>
-                  <p className='bg-indigo-800 p-2 rounded-full'>ReactJs</p>
-                  <p className='bg-indigo-800 p-2 rounded-full'>Tailwindcss</p>
-                  <p className='bg-indigo-800 p-2 rounded-full'>GeolocationAPI</p>
-                  <p className='bg-indigo-800 p-2 rounded-full'>Reactleaflet</p>
-                </div>
-                <div className='flex gap-3 flex-row-reverse mt-4'>
-                  <a href='https://github.com/Almuhandith/ip-address-tracker' className='hover:text-indigo-200'><FiGithub/></a>
-                  <a href='https://ip-address-tracker-abdulsamad.vercel.app/' className='hover:text-indigo-200'><FiExternalLink /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* fourth page */}
-        <section className='min-h-screen pt-10'>
+        <section id='contact' className='min-h-screen pt-10'>
           <div className='max-w-5xl mx-auto text-center p-10'>
+            <h5 className='text-sm dark:text-indigo-200'>04. What`s next</h5>
             <h3 className='lg:text-5xl text-3xl font-bold'>Get in touch</h3>
             <p className='max-w-xl lg:max-w-8xl lg:mx-auto py-12 lg:text-xl dark:text-indigo-200 leading-8'>My inbox is always open. Whether you have a question or just want to say hi or you have an opportunity for me, I’ll try my best to get back to you!
             </p>
