@@ -2,6 +2,7 @@ import 'tailwindcss/tailwind.css';
 import '/src/app/globals.css';
 import { useEffect } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -16,8 +17,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link
+        <Link
           href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap"
+          rel="stylesheet"
+        />
+        <Link
+          href="https://fonts.googleapis.com/css2?family=Malgun+Gothic&display=swap"
           rel="stylesheet"
         />
       </Head>

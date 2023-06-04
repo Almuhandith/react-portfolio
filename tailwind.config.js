@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'comic-sans': ['Comic Sans MS', 'cursive'],
+        'malgun-gothic': ['Malgun Gothic', 'sans-serif'],
       },
       colors: {
         dark: '#1f2937',

@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
 
 
-      <main className={`font-comic-sans bg-white px-3 md:px-20 lg:px-50 dark:bg-indigo-900 dark:text-white`}>
+      <main className={`font-malgun-gothic bg-white px-3 md:px-20 lg:px-50 dark:bg-indigo-900 dark:text-white`}>
         <Navbar />
         <section className="min-h-screen pt-16 lg:pt-24">
           <div className='max-w-5xl mx-auto p-10 py-10'>
@@ -80,7 +80,7 @@ export default function Home() {
               </div>
               <div className='lg:absolute lg:z-10 lg:right-0 lg:w-1/2 lg:text-right'>
                 <h4 className='text-xl font-semibold mb-4'>Weather App</h4>
-                <p className='text-md py-2 lg:px-4 leading-8 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
+                <p className='text-md py-2 lg:px-4 leading-8 lg:bg-indigo-800 text-indigo-200'>
                   This is a web app that displays the weather of cities around the world. The forecast of days in a week and other details can also be displayed.
                 </p>
                 <p className='lg:bg-indigo-800 lg:px-4 lg:pb-4'>It was developed with ReactJs and css. Openweather Api and GeoDB cities is integrated into the app.
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
               <div className='lg:absolute lg:z-10 lg:right-0 lg:w-1/2 lg:text-right'>
                 <h4 className='text-xl font-semibold mb-4'>IP Address Tracker</h4>
-                <p className='text-md py-2 leading-8 lg:px-4 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
+                <p className='text-md py-2 leading-8 lg:px-4 lg:bg-indigo-800 text-indigo-200'>
                   This is a web app that displays the location of IP addresses and domains
                 </p>
                 <p className='lg:bg-indigo-800 lg:px-4 lg:pb-4'>It was developed with ReactJs and Tailwindcss. Geolocation Api and React leaflet is integrated into the app.
@@ -174,7 +174,7 @@ export default function Home() {
         </section> */}
         <section id='contact' className='min-h-screen pt-10'>
           <div className='max-w-5xl mx-auto text-center p-10'>
-            <h5 className='text-sm dark:text-indigo-200'>04. What`s next</h5>
+            <h5 className='text-sm dark:text-indigo-200'>03. What`s next</h5>
             <h3 className='lg:text-5xl text-3xl font-bold'>Get in touch</h3>
             <p className='max-w-xl lg:max-w-8xl lg:mx-auto py-12 lg:text-xl dark:text-indigo-200 leading-8'>My inbox is always open. Whether you have a question or just want to say hi or you have an opportunity for me, I’ll try my best to get back to you!
             </p>
