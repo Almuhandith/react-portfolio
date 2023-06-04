@@ -12,8 +12,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        burtons: "burtons",
-      }
+        'comic-sans': ['Comic Sans MS', 'cursive'],
+      },
+      colors: {
+        dark: '#1f2937',
+      },
     },
   },
   plugins: [],

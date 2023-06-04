@@ -12,15 +12,13 @@ import web1 from 'public/web1.png';
 import web2 from 'public/web2.png';
 import React, { useState } from 'react';
 import profile from 'public/profile.jpg';
-import Cursor from './Cursor';
-import Navbar from '../components/Navbar';
+import Cursor from '../../components/Cursor';
+import Navbar from '../../components/Navbar';
 
 
 export default function Home() {
-  //Darkmode hook
-  const [darkMode, setDarkMode] = useState(true);
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>Abdulsamad Raji Portfolio</title>
         <meta name='description' content='' />
@@ -28,9 +26,9 @@ export default function Home() {
       </Head>
 
 
-      <main className='bg-white px-3 md:px-20 lg:px-50 dark:bg-indigo-900 dark:text-white'>
+      <main className={`font-comic-sans bg-white px-3 md:px-20 lg:px-50 dark:bg-indigo-900 dark:text-white`}>
         <Navbar />
-        <section className=" min-h-screen pt-16 lg:pt-24">
+        <section className="min-h-screen pt-16 lg:pt-24">
           <div className='max-w-5xl mx-auto p-10 py-10'>
             <h2 className='text-5xl py-2 text-indigo-600 dark:text-indigo-100 font-medium md:text-6xl lg:text-7xl'>Abdulsamad Raji.</h2>
             <h3 className='text-3xl py-2 text-indigo-800 dark:text-indigo-200 font-medium md:text-6xl lg:text-7xl'>I build things for the web</h3>
@@ -51,7 +49,7 @@ export default function Home() {
             <h3 className='text-3xl py-4 font-bold'>About me</h3>
             <div className='lg:flex gap-10'>
               <div>
-                <p className='max-w-xl py-5 lg:text-xl dark:text-indigo-200 leading-8'>Hello! My name is Abdulsamad and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to try to code for fun in my free time — turns out a hobby could actually grow into a career</p>
+                <p className={`max-w-xl py-5 lg:text-xl dark:text-indigo-200 leading-8`}>Hello! My name is Abdulsamad and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to try to code for fun in my free time — turns out a hobby could actually grow into a career</p>
                 <p className='max-w-xl py-5 lg:text-xl dark:text-indigo-200 leading-8'>Here are a few technologies I`ve been working with lately</p>
                 <ul className='dark:text-indigo-200 lg:text-xl grid grid-cols-2'>
                   <li className='flex gap-3 mb-2'><SiJavascript className='mt-1' />JavaScript</li>
@@ -82,13 +80,13 @@ export default function Home() {
               </div>
               <div className='lg:absolute lg:z-10 lg:right-0 lg:w-1/2 lg:text-right'>
                 <h4 className='text-xl font-semibold mb-4'>Weather App</h4>
-                <p className='text-md py-2 px-4 leading-8 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
+                <p className='text-md py-2 lg:px-4 leading-8 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
                   This is a web app that displays the weather of cities around the world. The forecast of days in a week and other details can also be displayed.
                 </p>
-                <p className='lg:bg-indigo-800 px-4 lg:pb-4'>It was developed with ReactJs and css. Openweather Api and GeoDB cities is integrated into the app.
+                <p className='lg:bg-indigo-800 lg:px-4 lg:pb-4'>It was developed with ReactJs and css. Openweather Api and GeoDB cities is integrated into the app.
                 </p>
                 <div className='flex gap-1 lg:gap-4 lg:flex-row-reverse text-xs lg:mt-4'>
-                  <p className='lg:bg-indigo-800 p-2 rounded-full'>ReactJs</p>
+                  <p className='lg:bg-indigo-800 lg:px-2 py-2 rounded-full'>ReactJs</p>
                   <p className='lg:bg-indigo-800 p-2 rounded-full'>Tailwindcss</p>
                   <p className='lg:bg-indigo-800 p-2 rounded-full'>OpenweatherAPI</p>
                   <p className='lg:bg-indigo-800 p-2 rounded-full'>GeoDBAPI</p>
@@ -108,16 +106,16 @@ export default function Home() {
               </div>
               <div className='lg:absolute lg:z-10 lg:right-0 lg:w-1/2 lg:text-right'>
                 <h4 className='text-xl font-semibold mb-4'>IP Address Tracker</h4>
-                <p className='text-md py-2 px-4 leading-8 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
+                <p className='text-md py-2 leading-8 lg:px-4 lg:bg-indigo-800 text-indigo-700 dark:text-indigo-200'>
                   This is a web app that displays the location of IP addresses and domains
                 </p>
-                <p className='lg:bg-indigo-800 px-4 lg:pb-4'>It was developed with ReactJs and Tailwindcss. Geolocation Api and React leaflet is integrated into the app.
+                <p className='lg:bg-indigo-800 lg:px-4 lg:pb-4'>It was developed with ReactJs and Tailwindcss. Geolocation Api and React leaflet is integrated into the app.
                 </p>
                 <div className='flex gap-0 lg:gap-4 lg:flex-row-reverse text-xs lg:mt-4'>
-                  <p className='lg:bg-indigo-800 p-2 rounded-full'>ReactJs</p>
+                  <p className='lg:bg-indigo-800 lg:px-2 py-2 rounded-full'>ReactJs</p>
                   <p className='lg:bg-indigo-800 p-2 rounded-full'>Tailwindcss</p>
-                  <p className='lg:bg-indigo-800 p-2 rounded-full'>GeolocationAPI</p>
-                  <p className='lg:bg-indigo-800 p-2 rounded-full'>Reactleaflet</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>Geo_location_API</p>
+                  <p className='lg:bg-indigo-800 p-2 rounded-full'>React-leaflet</p>
                 </div>
                 <div className='flex gap-3 flex-row-reverse mt-4'>
                   <a href='https://github.com/Almuhandith/ip-address-tracker' className='hover:text-indigo-200'><FiGithub/></a>
