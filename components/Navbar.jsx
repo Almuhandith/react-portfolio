@@ -31,19 +31,19 @@ function Navbar() {
 
   return (
     <main>
-        <nav  className={`w-full border-b bg-white dark:bg-indigo-900 fixed top-0 left-0 right-0 z-50`}>
+        <nav  className={`w-full border-b bg-white dark:bg-primary fixed top-0 left-0 right-0 z-50`}>
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
             <div className="flex items-center justify-between py-3 md:py-6 md:block">
               <Link href="/">
-                <h1 className='text-xl font-bold font-burtons text-indigo-600 dark:text-indigo-200'>
+                <h1 className='text-xl font-bold font-burtons text-cyan-600 dark:text-cyan-200'>
                   <BiCodeAlt />
                 </h1>
               </Link>
               <div className="md:hidden">
-                <button className="p-2 right-0 text-indigo-200 rounded-md outline-none focus:border-indigo-400" onClick={() => setNavBar(!navBar)}
+                <button className="p-2 right-0 text-cyan-200 rounded-md outline-none focus:border-cyan-400" onClick={() => setNavBar(!navBar)}
                 >
                   {navBar ? (
-                    <MdClose width={30} height={30} className="text-indigo-200"/>
+                    <MdClose width={30} height={30} className="text-cyan-200"/>
                   ) : (
                     <GiHamburgerMenu width={30} height={30} className="focus:border-none active:border-none" />
                   )}
@@ -57,27 +57,27 @@ function Navbar() {
                 }`}
               >
                 <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                  <li className="pb-6 text-lg dark:text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-indigo-200  md:hover:text-indigo-600 md:hover:bg-transparent">
+                  <li className="pb-6 text-lg dark:text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-cyan-200  md:hover:text-cyan-600 md:hover:bg-transparent">
                     <Link href="#about" onClick={() => setNavBar(!navBar)}>
                       01. About
                     </Link>
                   </li>
-                  <li className="pb-6 text-lg dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-indigo-200  md:hover:text-indigo-600 md:hover:bg-transparent">
+                  <li className="pb-6 text-lg dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-cyan-200  md:hover:text-cyan-600 md:hover:bg-transparent">
                     <Link href="#projects" onClick={() => setNavBar(!navBar)}>
                       02. Projects
                     </Link>
                   </li>
-                  <li className="pb-6 text-lg dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-indigo-200  md:hover:text-indigo-600 md:hover:bg-transparent">
+                  <li className="pb-6 text-lg dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-cyan-200  md:hover:text-cyan-600 md:hover:bg-transparent">
                     <Link href="#contact" onClick={() => setNavBar(!navBar)}>
                       03. Contact
                     </Link>
                   </li>
-                  <li className="pb-6 dark:text-white py-2 px-6 items-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-indigo-200  md:hover:text-indigo-600 md:hover:bg-transparent">
-                    <BsFillMoonStarsFill onClick={toggleDarkMode} className='cursor-pointer text-xl text-center'/>
+                  <li className="pb-6 dark:text-white py-2 lg:px-4 px-28 border-b-2 md:border-b-0  hover:bg-purple-600  border-cyan-200  md:hover:text-cyan-600 md:hover:bg-transparent">
+                    <BsFillMoonStarsFill onClick={toggleDarkMode} className='cursor-pointer text-xl'/>
                   </li>
-                  <li className="pb-6 text-lg dark:text-white pt-6 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-indigo-200  md:hover:text-indigo-600 md:hover:bg-transparent">
+                  <li className="pb-6 text-lg dark:text-white pt-6 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-cyan-200  md:hover:text-cyan-600 md:hover:bg-transparent">
                     <Link
-                      className='lg:border-2 lg:border-indigo-600 lg:px-4 lg:py-2 rounded-md ml-8 dark:border-indigo-200 dark:hover:bg-indigo-900'
+                      className='lg:border-2 lg:border-cyan-600 lg:px-4 lg:py-2 rounded-md ml-8 dark:border-cyan-200 dark:hover:bg-primary'
                       href='https://drive.google.com/file/d/1IT4Ykioxov_TulVpVTW0QX47PX1Cd6q5/view' target="_blank" rel='noreferrer'
                     >
                       Resume
