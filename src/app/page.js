@@ -22,7 +22,7 @@ export default function Home() {
       <Head>
         <title>Abdulsamad Raji Portfolio</title>
         <meta name='description' content='' />
-        <link rel='icon' href='/favicon.png' />
+        <link rel='icon' href='/favicon.png'/>
       </Head>
 
 
