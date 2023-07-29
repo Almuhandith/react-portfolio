@@ -17,8 +17,8 @@ const About = () => {
                   <li className='flex gap-3 mb-2'><SiJavascript className='mt-1' />JavaScript</li>
                   <li className='flex gap-3 mb-2'><SiReact className='mt-1' />React</li>
                   <li className='flex gap-3 mb-2'><SiNextdotjs className='mt-1'/>NextJs</li>
-                  <li className='flex gap-3 mb-2'><SiMysql className='mt-1'/>MySQL</li>
-                  <li className='flex gap-3 mb-2'><SiPython className='mt-1'/>Python</li>
+                  {/* <li className='flex gap-3 mb-2'><SiMysql className='mt-1'/>MySQL</li>
+                  <li className='flex gap-3 mb-2'><SiPython className='mt-1'/>Python</li> */}
                   <li className='flex gap-3 mb-2'><SiLinux className='mt-1'/>Linux</li>
                   <li className='flex gap-3 mb-2'><SiBootstrap className='mt-1'/>Bootstrap CSS</li>
                   <li className='flex gap-3 mb-2'><SiTailwindcss className='mt-1'/>Tailwind CSS</li>

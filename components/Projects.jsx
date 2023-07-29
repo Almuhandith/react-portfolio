@@ -42,7 +42,7 @@ const Projects = () => {
             </div>
             <div className='lg:flex lg:relative my-14'>
               <div className='lg:w-3/5 relative'>
-                <Link href='https://react-weather-app-sable.vercel.app/' className='cursor-pointer'>
+                <Link href='https://ip-address-tracker-abdulsamad.vercel.app/' className='cursor-pointer'>
                   <Image src={web2} alt='' className='' />
                   <div className='absolute top-0 left-0 bg-cyan-200/30 hover:bg-transparent h-full w-full'></div>
                 </Link>

@@ -10,7 +10,7 @@ const Hero = () => {
             <h3 className='text-3xl py-2 text-cyan-800 dark:text-cyan-200 font-medium md:text-6xl lg:text-7xl'>I build things for the web</h3>
             <h4 className='text-2xl pt-10 md:text-3xl'>Software Engineer</h4>
             <p className='text-md py-3 leading-8 text-cyan-800 md:text-xl max-w-xl dark:text-cyan-200'>
-            I’m a software engineer specializing in building exceptional digital experiences
+            I’m a software engineer specializing in building exceptional digital experiences for users
             </p>
           </div>
           <div className='text-5xl flex justify-center max-w-xl mx-auto gap-16 py-3 text-gray-600 dark:text-cyan-200'>
