@@ -78,7 +78,7 @@ function Navbar() {
                   <li className="pb-6 text-lg dark:text-white pt-6 py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-cyan-600  border-cyan-200  md:hover:text-cyan-600 md:hover:bg-transparent">
                     <Link
                       className='lg:border-2 lg:border-cyan-600 lg:px-4 lg:py-2 rounded-md ml-8 dark:border-cyan-200 dark:hover:bg-primary'
-                      href='https://drive.google.com/file/d/1IT4Ykioxov_TulVpVTW0QX47PX1Cd6q5/view' target="_blank" rel='noreferrer'
+                      href='https://drive.google.com/file/d/1blP3wV12tPzAlok_oWBrrE_Xdr_OmX0e/view?usp=drive_link' target="_blank" rel='noreferrer'
                     >
                       Resume
                     </Link>
